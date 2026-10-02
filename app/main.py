@@ -7,6 +7,7 @@ from fastapi import FastAPI, File, Header, HTTPException, UploadFile, Depends
 from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field
 from pypdf import PdfReader
+from pypdf.errors import PdfReadError
 from .engine import Engine
 
 def authorize(x_api_key: str | None = Header(default=None)):
@@ -57,7 +58,7 @@ def create_app(store=None, backend=None):
             else:
                 raise HTTPException(415, "Use PDF, TXT or Markdown")
             return app.state.engine.ingest(name, text)
-        except (ValueError, UnicodeError) as exc:
+        except (ValueError, UnicodeError, PdfReadError) as exc:
             raise HTTPException(422, "Could not extract document text") from exc
     @app.post("/query", dependencies=[Depends(authorize)])
     def query(q: Query):
