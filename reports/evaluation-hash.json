@@ -1,0 +1,116 @@
+{
+  "backend": "hash",
+  "generation": "extractive",
+  "dataset": "13 authored policy questions, 6 short synthetic documents; development benchmark, not a held-out real-world corpus",
+  "recall_at_3": 0.9166666666666666,
+  "mrr_at_3": 0.9166666666666666,
+  "answer_contains_expected_rate": 0.9166666666666666,
+  "unanswerable_abstention_rate": 1.0,
+  "p95_query_ms": 1.2678619998041532,
+  "cases": [
+    {
+      "question": "How long are customer support tickets retained?",
+      "answerable": true,
+      "rank": 1,
+      "answer_contains_expected": true,
+      "abstained": false,
+      "latency_ms": 1.6592210004091612
+    },
+    {
+      "question": "How long do we retain security audit logs?",
+      "answerable": true,
+      "rank": 1,
+      "answer_contains_expected": true,
+      "abstained": false,
+      "latency_ms": 0.9661349995440105
+    },
+    {
+      "question": "When must critical security incidents be acknowledged?",
+      "answerable": true,
+      "rank": 1,
+      "answer_contains_expected": true,
+      "abstained": false,
+      "latency_ms": 0.9386940000695176
+    },
+    {
+      "question": "Who coordinates the incident response?",
+      "answerable": true,
+      "rank": 1,
+      "answer_contains_expected": true,
+      "abstained": false,
+      "latency_ms": 0.9279080004489515
+    },
+    {
+      "question": "What minimum ROC AUC is needed for a model release?",
+      "answerable": true,
+      "rank": 1,
+      "answer_contains_expected": true,
+      "abstained": false,
+      "latency_ms": 1.006955999400816
+    },
+    {
+      "question": "When should we roll back a model for prediction latency?",
+      "answerable": true,
+      "rank": 1,
+      "answer_contains_expected": true,
+      "abstained": false,
+      "latency_ms": 0.9135969994531479
+    },
+    {
+      "question": "How many remote work days are allowed per week?",
+      "answerable": true,
+      "rank": 1,
+      "answer_contains_expected": true,
+      "abstained": false,
+      "latency_ms": 0.9715739997773198
+    },
+    {
+      "question": "When do new employees complete security training?",
+      "answerable": true,
+      "rank": 1,
+      "answer_contains_expected": true,
+      "abstained": false,
+      "latency_ms": 0.9779629999684403
+    },
+    {
+      "question": "What file formats does the document API accept?",
+      "answerable": true,
+      "rank": 1,
+      "answer_contains_expected": true,
+      "abstained": false,
+      "latency_ms": 0.9891290001178277
+    },
+    {
+      "question": "What is the maximum upload size?",
+      "answerable": true,
+      "rank": null,
+      "answer_contains_expected": false,
+      "abstained": true,
+      "latency_ms": 0.8393360003537964
+    },
+    {
+      "question": "How often do database backups run?",
+      "answerable": true,
+      "rank": 1,
+      "answer_contains_expected": true,
+      "abstained": false,
+      "latency_ms": 0.8671670002513565
+    },
+    {
+      "question": "What is the recovery time objective?",
+      "answerable": true,
+      "rank": 1,
+      "answer_contains_expected": true,
+      "abstained": false,
+      "latency_ms": 0.8941670002968749
+    },
+    {
+      "question": "Who won the 2014 football world cup?",
+      "answerable": false,
+      "rank": null,
+      "answer_contains_expected": false,
+      "abstained": true,
+      "latency_ms": 0.8431619999100803
+    }
+  ]
+}

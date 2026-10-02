@@ -1,6 +1,12 @@
 .venv/
 __pycache__/
+*.pyc
+.pytest_cache/
 .env
 data/
 artifacts/
 mlruns/
+*.db
+*.db-shm
+*.db-wal
+.cache/

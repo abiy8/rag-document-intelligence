@@ -1,0 +1,8 @@
+[
+{"name":"retention-policy.md","text":"Customer support tickets are retained for 90 days. After the retention period tickets are permanently deleted. Security audit logs are retained for 365 days. Billing records are retained for seven years."},
+{"name":"incident-response.md","text":"A critical security incident must be acknowledged within 15 minutes. The incident commander coordinates the response. The security team rotates compromised credentials immediately. Post-incident reviews are completed within five business days."},
+{"name":"ml-release.md","text":"A model release requires a holdout ROC AUC of at least 0.90. Training and evaluation datasets must be separate. A candidate model is staged before promotion. If prediction latency exceeds 200 milliseconds for ten minutes, roll back to the previous model version."},
+{"name":"remote-work.md","text":"Employees may work remotely three days per week. Travel reimbursements must be submitted within 30 days. New employees complete security training within 14 days. The office opens at 8 AM on weekdays."},
+{"name":"api-limits.md","text":"The document API accepts PDF, plain text and Markdown files. A single upload is limited to 5 megabytes. Queries can return up to ten source chunks. Scanned PDF files require optical character recognition before uploading."},
+{"name":"backup-policy.md","text":"Database backups run every six hours. Backups are encrypted at rest and retained for 30 days. The recovery time objective is two hours. Restore tests run monthly in an isolated environment."}
+]
