@@ -25,6 +25,7 @@ def test_api_upload_auth_validation_and_sources(monkeypatch):
         assert c.post("/documents",json={"name":"x","text":"y"}).status_code==401
         headers={"X-API-Key":"test-key"}
         assert c.post("/upload",headers=headers, files={"file":("a.exe",b"hello")}).status_code==415
+        assert c.post("/upload",headers=headers, files={"file":("broken.pdf",b"invalid PDF")}).status_code==422
         assert c.post("/upload",headers=headers, files={"file":("policy.txt",b"Database backups run every six hours.")}).status_code==200
         r=c.post("/query",headers=headers,json={"question":"How often do database backups run?"}).json()
         assert "six hours" in r["answer"] and r["sources"][0]["name"]=="policy.txt"
