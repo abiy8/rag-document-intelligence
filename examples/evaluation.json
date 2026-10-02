@@ -1,0 +1,15 @@
+[
+{"question":"How long are customer support tickets retained?","document":"retention-policy.md","answer":"90 days"},
+{"question":"How long do we retain security audit logs?","document":"retention-policy.md","answer":"365 days"},
+{"question":"When must critical security incidents be acknowledged?","document":"incident-response.md","answer":"15 minutes"},
+{"question":"Who coordinates the incident response?","document":"incident-response.md","answer":"incident commander"},
+{"question":"What minimum ROC AUC is needed for a model release?","document":"ml-release.md","answer":"0.90"},
+{"question":"When should we roll back a model for prediction latency?","document":"ml-release.md","answer":"200 milliseconds"},
+{"question":"How many remote work days are allowed per week?","document":"remote-work.md","answer":"three days"},
+{"question":"When do new employees complete security training?","document":"remote-work.md","answer":"14 days"},
+{"question":"What file formats does the document API accept?","document":"api-limits.md","answer":"Markdown"},
+{"question":"What is the maximum upload size?","document":"api-limits.md","answer":"5 megabytes"},
+{"question":"How often do database backups run?","document":"backup-policy.md","answer":"six hours"},
+{"question":"What is the recovery time objective?","document":"backup-policy.md","answer":"two hours"},
+{"question":"Who won the 2014 football world cup?","document":null,"answer":null}
+]
